@@ -1,0 +1,1278 @@
+<RepTask Name="location" Description="" Type="REALTIME" RepVersion="2.0">
+    <SourceObjects SourceType="HanaAdapter" TTFullyQualifiedName="FALSE" VTFullyQualifiedName="FALSE" RemoteSourceName="TRP_SDI_HANA" VirtualTableSchema="">
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOC&quot;" SourceDisplayName="/SAPAPO/LOC">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCTYPE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCNO" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOC_UUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="GLN" Datatype="NVARCHAR" Length="13" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DUNS4" Datatype="NVARCHAR" Length="13" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="UNLOCODE" Datatype="NVARCHAR" Length="5" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="IATACODE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TZONE" Datatype="NVARCHAR" Length="6" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LVORM" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ADRNUMMER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SUBLOC" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="OSTA_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOC_XBLCK" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ARCH_INPROCESS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="XPOS" Datatype="DOUBLE" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0"/>
+                <SourceColumn Name="YPOS" Datatype="DOUBLE" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0"/>
+                <SourceColumn Name="PRECISID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SRCID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ZPOS" Datatype="DECIMAL" Length="9" Nullable="false" PartOfPrimaryKey="false" Precision="6" Scale="3"/>
+                <SourceColumn Name="PPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SDCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SHCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RCCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="EDI_PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PARTNER_GUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SPERM" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="HANDL" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="HANDL_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TIME_RES" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TIME_RES_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STORE" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TPRES_INB" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TPRES_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RESFLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PRREG" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LPRIO" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STOCG" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATDDM" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATDSP" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PUSH_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STOCK_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CONSOL_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="COMP_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRPCR_TIME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="TRPCR_TIME_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="COM_TIME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="COM_TIME_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SETUPKEY" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SCACD" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CONT_MV" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="PERF_PCT" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <SourceColumn Name="FVISIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LVISIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="KOSCH" Datatype="NVARCHAR" Length="18" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SUBCON_PLANT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SUBCON_SUPPLIER" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PRCIND" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="OPTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="PROMUP" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROMDOWN" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="COSTMULTUPPROM" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="COSTMULTDOWNPROM" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="NIELSEN" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STORCAPA" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="STORCAPA_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DECONS" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATTLO01" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATTLO02" Datatype="NVARCHAR" Length="30" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATTLO03" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATTLO04" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ATTLO05" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROTS" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROBASE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROOQO" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROBEXC" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROSUIRESP" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TEMPRPBLOCK" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PROBICONS" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TEMPRPFROM" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="TEMPRPTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="DPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CAPPARM" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CAPPARM_RCV" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LGRAD" Datatype="DECIMAL" Length="5" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="2"/>
+                <SourceColumn Name="BNTYP" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DISTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRAILER_HANDLING" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SHIPPER_SEC_STS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SHIPPER_CODE" Datatype="NVARCHAR" Length="25" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SHIPPER_VALIDITY" Datatype="NVARCHAR" Length="8" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CREATEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CREATEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="CHANGEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CHANGEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOCT&quot;" SourceDisplayName="/SAPAPO/LOCT">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="DESCR40" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOC_EQUI&quot;" SourceDisplayName="/SAPAPO/LOC_EQUI">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RES_CLASS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="EQUI_TYPE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="EQUI_CODE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="true"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELDSTR&quot;" SourceDisplayName="/SAPAPO/RELDSTR">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELNAME" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELSTRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELUSESEQ" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELDSTRT&quot;" SourceDisplayName="/SAPAPO/RELDSTRT">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LANGU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELEHZON&quot;" SourceDisplayName="/SAPAPO/RELEHZON">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="PNODEID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="CNODEID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="CLEVID" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELINVISIBLE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELSDIR&quot;" SourceDisplayName="/SAPAPO/RELSDIR">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELSTRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="RELSNAME" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELNODETYPE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELTYPE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELLINKTABLE" Datatype="NVARCHAR" Length="30" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RELTCODE" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="NO_LEVEL_RESTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TMODCOD&quot;" SourceDisplayName="/SAPAPO/TMODCOD">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRMODCOD" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="DGMOT" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRMODCAT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="MAIN_CARRIAGE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DIST_EMISSION_FACTOR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DEFAULT_MTR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TMODCODT&quot;" SourceDisplayName="/SAPAPO/TMODCODT">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRMODCODE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRMODCODETXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TR&quot;" SourceDisplayName="/SAPAPO/TR">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRLID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRTEXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PLANNER" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="OPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SHPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RECCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="COMM_DURA" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="CORR_FPER" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="4" Scale="0"/>
+                <SourceColumn Name="PROMO_RND" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SSD_PRF_ID_H" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRM&quot;" SourceDisplayName="/SAPAPO/TRM">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRMID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VALFR" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALFR_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALTO_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="PTFLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PTHCNT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="AGGTPLFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DTLTPLFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRMTEXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTYPECOST" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="TTYPECOST_MIN" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="DURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="DURFX" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="STOPDURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="DIST" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="DISTFX" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TCOST" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="13" Scale="2"/>
+                <SourceColumn Name="TUNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TCOSTID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RESUID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TPRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTYPEDISC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DURRNDPR" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <SourceColumn Name="TREQ_COVER_TYPE" Datatype="DECIMAL" Length="4" Nullable="true" PartOfPrimaryKey="false" Precision="1" Scale="3"/>
+                <SourceColumn Name="PREC" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="NSTKIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="USAGE_CARRSEL" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VTPRID" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VTOSIDDEF" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VTOSID" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOADSEL" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ORDTOL" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <SourceColumn Name="PIHOR" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="0"/>
+                <SourceColumn Name="SIZEDEC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SIZETH" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <SourceColumn Name="TDD_LT_PULL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="TDD_LT_PUSH" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="TSS_LT_PULL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="TSS_LT_PUSH" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRMCARR&quot;" SourceDisplayName="/SAPAPO/TRMCARR">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TRMCARRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VALFR" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALFR_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="VALTO_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="CARRTRCOST" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="13" Scale="2"/>
+                <SourceColumn Name="CARRTRCOSTUNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CARRCOST" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="CARRPRIO" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="0"/>
+                <SourceColumn Name="BUSNSSHARE" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <SourceColumn Name="MINSHIP" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="MAXSHIP" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMDTWEU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMDTWE" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="CMDTWLU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMDTWL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="CMATWEU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMATWE" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="CMATWLU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMATWL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="CMMAXD" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="CMRECC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CMDISC" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <SourceColumn Name="DG_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TMP2PTENDFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TMP2PTENDPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TMBROADCTENDFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TMBROADCTENDPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRTYPE&quot;" SourceDisplayName="/SAPAPO/TRTYPE">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="MOTSCODE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="AVGVEL" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="DISTFAC" Datatype="DECIMAL" Length="5" Nullable="false" PartOfPrimaryKey="false" Precision="2" Scale="3"/>
+                <SourceColumn Name="FIXTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="AVGWTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <SourceColumn Name="TRMODE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="OWNTTYPFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RESUID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTCONNFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TSWFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="IGS_QUALITY" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="VELO_LOW" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="VELO_MEDIUM" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="VELO_HIGH" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <SourceColumn Name="EXT_TTYPE_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="EXT_TTYPE_NUM" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOAD_WEIGHT" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="LOAD_UOM_WGT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOAD_VOLUME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="LOAD_UOM_VOL" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOAD_LENGTH" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="LOAD_WIDTH" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="LOAD_HEIGHT" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <SourceColumn Name="LOAD_UOM_LWH" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TTYPE_PARENT" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DGMOT" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="EMG_AUTO_TRANS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PASSIVE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="NO_CAPACITY" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="NO_DIRECT_LOAD" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LOCK_MULTIRES" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TRMODCODE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DIST_EMISSION_FACTOR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="RES_CLASS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="UNLTD_NO_INDV_RES" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="FLAG_DEFAULT_MTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/TOENTITY&quot;" SourceDisplayName="/SCMB/TOENTITY">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="SCUGUID" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="ENTITY" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SCUGUID22" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="SCUTYPE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TZONE" Datatype="NVARCHAR" Length="6" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ADRESSE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PARTNER_GUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="DELFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="LONGITUDE" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="12"/>
+                <SourceColumn Name="LATITUDE" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="12"/>
+                <SourceColumn Name="GEOPRECIS" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="GEOSRCID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CREATEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CREATEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="CHANGEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CHANGEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE&quot;" SourceDisplayName="/SCMB/ZONE">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="ID_ZONE" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CRNAM" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CRTIMESTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="CHNAM" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CHTIMESTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <SourceColumn Name="DEL_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="TYPE_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ROUT_REL_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="MAIN_BUS_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="BUS_PRIC_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="CITY_CODE_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="ZONE_CATEGORY" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONET&quot;" SourceDisplayName="/SCMB/ZONET">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="DESCR" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_D&quot;" SourceDisplayName="/SCMB/ZONE_D">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_LOCATION" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="EXCLUDE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_P&quot;" SourceDisplayName="/SCMB/ZONE_P">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="COUNTER" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="COUNTRY" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PCODE_FROM" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="PCODE_TO" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_R&quot;" SourceDisplayName="/SCMB/ZONE_R">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="COUNTER" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="COUNTRY" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <SourceColumn Name="REGION" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+            </SourceColumns>
+        </SourceObject>
+        <SourceObject RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMTMS/D_SHZON&quot;" SourceDisplayName="/SCMTMS/D_SHZON">
+            <SourceColumns>
+                <SourceColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="ZONEID" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="true"/>
+                <SourceColumn Name="LOCUUID" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+            </SourceColumns>
+        </SourceObject>
+        <Annotations Key="sap.im.properties">
+            <Annotation Key="cdc" Value="true"/>
+        </Annotations>
+    </SourceObjects>
+    <TargetObjects>
+        <TargetObject ObjectName="/SAPAPO/LOC" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCTYPE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCNO" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOC_UUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="GLN" Datatype="NVARCHAR" Length="13" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DUNS4" Datatype="NVARCHAR" Length="13" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="UNLOCODE" Datatype="NVARCHAR" Length="5" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="IATACODE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TZONE" Datatype="NVARCHAR" Length="6" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LVORM" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ADRNUMMER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SUBLOC" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="OSTA_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOC_XBLCK" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ARCH_INPROCESS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="XPOS" Datatype="DOUBLE" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0"/>
+                <TargetColumn Name="YPOS" Datatype="DOUBLE" Length="0" Nullable="false" PartOfPrimaryKey="false" Precision="0" Scale="0"/>
+                <TargetColumn Name="PRECISID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SRCID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ZPOS" Datatype="DECIMAL" Length="9" Nullable="false" PartOfPrimaryKey="false" Precision="6" Scale="3"/>
+                <TargetColumn Name="PPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SDCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SHCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RCCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="EDI_PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PARTNER_GUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SPERM" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="HANDL" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="HANDL_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TIME_RES" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TIME_RES_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STORE" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TPRES_INB" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TPRES_OUT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RESFLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PRREG" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LPRIO" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STOCG" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATDDM" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATDSP" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PUSH_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STOCK_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CONSOL_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="COMP_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRPCR_TIME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="TRPCR_TIME_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="COM_TIME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="COM_TIME_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SETUPKEY" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SCACD" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CONT_MV" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="PERF_PCT" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <TargetColumn Name="FVISIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LVISIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="KOSCH" Datatype="NVARCHAR" Length="18" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SUBCON_PLANT" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SUBCON_SUPPLIER" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PRCIND" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="OPTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="PROMUP" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROMDOWN" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="COSTMULTUPPROM" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="COSTMULTDOWNPROM" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="NIELSEN" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STORCAPA" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="STORCAPA_UNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DECONS" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATTLO01" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATTLO02" Datatype="NVARCHAR" Length="30" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATTLO03" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATTLO04" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ATTLO05" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROTS" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROBASE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROOQO" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROBEXC" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROSUIRESP" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TEMPRPBLOCK" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PROBICONS" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TEMPRPFROM" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="TEMPRPTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="DPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CAPPARM" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CAPPARM_RCV" Datatype="INTEGER" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LGRAD" Datatype="DECIMAL" Length="5" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="2"/>
+                <TargetColumn Name="BNTYP" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DISTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRAILER_HANDLING" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SHIPPER_SEC_STS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SHIPPER_CODE" Datatype="NVARCHAR" Length="25" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SHIPPER_VALIDITY" Datatype="NVARCHAR" Length="8" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CREATEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CREATEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="CHANGEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CHANGEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/LOCT" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="DESCR40" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/LOC_EQUI" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RES_CLASS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="EQUI_TYPE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="EQUI_CODE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="true"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/RELDSTR" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELNAME" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELSTRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELUSESEQ" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/RELDSTRT" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LANGU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/RELEHZON" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="PNODEID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="CNODEID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="CLEVID" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELINVISIBLE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/RELSDIR" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELSTRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="RELSNAME" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELNODETYPE" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELTYPE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELLINKTABLE" Datatype="NVARCHAR" Length="30" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RELTCODE" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="NO_LEVEL_RESTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TMODCOD" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRMODCOD" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="DGMOT" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRMODCAT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="MAIN_CARRIAGE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DIST_EMISSION_FACTOR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DEFAULT_MTR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TMODCODT" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRMODCODE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRMODCODETXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TR" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRLID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRTEXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PLANNER" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="OPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SHPCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RECCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="COMM_DURA" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="CORR_FPER" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="4" Scale="0"/>
+                <TargetColumn Name="PROMO_RND" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SSD_PRF_ID_H" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TRM" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRMID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VALFR" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALFR_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALTO_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="PTFLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PTHCNT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="AGGTPLFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DTLTPLFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRMTEXT" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRCAL" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTYPECOST" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="TTYPECOST_MIN" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="DURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="DURFX" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="STOPDURAT" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="DIST" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="DISTFX" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TCOST" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="13" Scale="2"/>
+                <TargetColumn Name="TUNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TCOSTID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RESUID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TPRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTYPEDISC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DURRNDPR" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <TargetColumn Name="TREQ_COVER_TYPE" Datatype="DECIMAL" Length="4" Nullable="true" PartOfPrimaryKey="false" Precision="1" Scale="3"/>
+                <TargetColumn Name="PREC" Datatype="NVARCHAR" Length="4" Nullable="true" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="NSTKIT" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="USAGE_CARRSEL" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VTPRID" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VTOSIDDEF" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VTOSID" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOADSEL" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ORDTOL" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <TargetColumn Name="PIHOR" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="0"/>
+                <TargetColumn Name="SIZEDEC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SIZETH" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="1" Scale="2"/>
+                <TargetColumn Name="TDD_LT_PULL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="TDD_LT_PUSH" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="TSS_LT_PULL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="TSS_LT_PUSH" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TRMCARR" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TRMCARRID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="PARTNER" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCFR" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCTO" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRNAME" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VALFR" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALTO" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALFR_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="VALTO_CTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="CARRTRCOST" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="13" Scale="2"/>
+                <TargetColumn Name="CARRTRCOSTUNIT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CARRCOST" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="CARRPRIO" Datatype="DECIMAL" Length="3" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="0"/>
+                <TargetColumn Name="BUSNSSHARE" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <TargetColumn Name="MINSHIP" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="MAXSHIP" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMDTWEU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMDTWE" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="CMDTWLU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMDTWL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="CMATWEU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMATWE" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="CMATWLU" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMATWL" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="CMMAXD" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="CMRECC" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CMDISC" Datatype="DECIMAL" Length="4" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="1"/>
+                <TargetColumn Name="DG_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TMP2PTENDFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TMP2PTENDPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TMBROADCTENDFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TMBROADCTENDPRIO" Datatype="SMALLINT" Length="0" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SAPAPO/TRTYPE" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="TTYPE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MOTSCODE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="AVGVEL" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="DISTFAC" Datatype="DECIMAL" Length="5" Nullable="false" PartOfPrimaryKey="false" Precision="2" Scale="3"/>
+                <TargetColumn Name="FIXTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="AVGWTIME" Datatype="DECIMAL" Length="11" Nullable="false" PartOfPrimaryKey="false" Precision="11" Scale="0"/>
+                <TargetColumn Name="TRMODE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="OWNTTYPFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RESUID" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTCONNFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TSWFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="IGS_QUALITY" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="VELO_LOW" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="VELO_MEDIUM" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="VELO_HIGH" Datatype="DECIMAL" Length="10" Nullable="false" PartOfPrimaryKey="false" Precision="7" Scale="3"/>
+                <TargetColumn Name="EXT_TTYPE_FLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="EXT_TTYPE_NUM" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOAD_WEIGHT" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="LOAD_UOM_WGT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOAD_VOLUME" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="LOAD_UOM_VOL" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOAD_LENGTH" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="LOAD_WIDTH" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="LOAD_HEIGHT" Datatype="DECIMAL" Length="13" Nullable="false" PartOfPrimaryKey="false" Precision="10" Scale="3"/>
+                <TargetColumn Name="LOAD_UOM_LWH" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TTYPE_PARENT" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DGMOT" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="EMG_AUTO_TRANS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PASSIVE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="NO_CAPACITY" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="NO_DIRECT_LOAD" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LOCK_MULTIRES" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TRMODCODE" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DIST_EMISSION_FACTOR" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="RES_CLASS" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="UNLTD_NO_INDV_RES" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="FLAG_DEFAULT_MTR" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/TOENTITY" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="SCUGUID" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="ENTITY" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SCUGUID22" Datatype="NVARCHAR" Length="22" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="SCUTYPE" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TZONE" Datatype="NVARCHAR" Length="6" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ADRESSE" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PARTNER_GUID" Datatype="VARBINARY" Length="16" Nullable="true" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="DELFLG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="LONGITUDE" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="12"/>
+                <TargetColumn Name="LATITUDE" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="3" Scale="12"/>
+                <TargetColumn Name="GEOPRECIS" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="GEOSRCID" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CREATEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CREATEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="CHANGEUSER" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CHANGEUTC" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/ZONE" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="ID_ZONE" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CRNAM" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CRTIMESTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="CHNAM" Datatype="NVARCHAR" Length="12" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CHTIMESTP" Datatype="DECIMAL" Length="15" Nullable="false" PartOfPrimaryKey="false" Precision="15" Scale="0"/>
+                <TargetColumn Name="DEL_FLAG" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="TYPE_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ROUT_REL_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="MAIN_BUS_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="BUS_PRIC_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="CITY_CODE_ZONE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="ZONE_CATEGORY" Datatype="NVARCHAR" Length="2" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/ZONET" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="SPRAS" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="DESCR" Datatype="NVARCHAR" Length="40" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/ZONE_D" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_LOCATION" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="EXCLUDE" Datatype="NVARCHAR" Length="1" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/ZONE_P" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="COUNTER" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="COUNTRY" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PCODE_FROM" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="PCODE_TO" Datatype="NVARCHAR" Length="10" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMB/ZONE_R" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="GUID_ZONE" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="COUNTER" Datatype="NVARCHAR" Length="4" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="COUNTRY" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+                <TargetColumn Name="REGION" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="false"/>
+            </TargetColumns>
+        </TargetObject>
+        <TargetObject ObjectName="/SCMTMS/D_SHZON" Type="TABLE" GeneratedByReptask="true" WriterType="UPSERT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" Datatype="NVARCHAR" Length="10" Nullable="true" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="MANDT" Datatype="NVARCHAR" Length="3" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="ZONEID" Datatype="NVARCHAR" Length="20" Nullable="false" PartOfPrimaryKey="true"/>
+                <TargetColumn Name="LOCUUID" Datatype="VARBINARY" Length="16" Nullable="false" PartOfPrimaryKey="true"/>
+            </TargetColumns>
+        </TargetObject>
+    </TargetObjects>
+    <Mappings>
+        <Mapping ObjectName="/SAPAPO/LOC" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOC&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/LOC">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="LOCID" ProjectionExpression="&quot;LOCID&quot;"/>
+                <TargetColumn Name="LOCTYPE" ProjectionExpression="&quot;LOCTYPE&quot;"/>
+                <TargetColumn Name="LOCNO" ProjectionExpression="&quot;LOCNO&quot;"/>
+                <TargetColumn Name="LOC_UUID" ProjectionExpression="&quot;LOC_UUID&quot;"/>
+                <TargetColumn Name="GLN" ProjectionExpression="&quot;GLN&quot;"/>
+                <TargetColumn Name="DUNS4" ProjectionExpression="&quot;DUNS4&quot;"/>
+                <TargetColumn Name="UNLOCODE" ProjectionExpression="&quot;UNLOCODE&quot;"/>
+                <TargetColumn Name="IATACODE" ProjectionExpression="&quot;IATACODE&quot;"/>
+                <TargetColumn Name="TZONE" ProjectionExpression="&quot;TZONE&quot;"/>
+                <TargetColumn Name="LVORM" ProjectionExpression="&quot;LVORM&quot;"/>
+                <TargetColumn Name="ADRNUMMER" ProjectionExpression="&quot;ADRNUMMER&quot;"/>
+                <TargetColumn Name="SUBLOC" ProjectionExpression="&quot;SUBLOC&quot;"/>
+                <TargetColumn Name="OSTA_FLAG" ProjectionExpression="&quot;OSTA_FLAG&quot;"/>
+                <TargetColumn Name="LOC_XBLCK" ProjectionExpression="&quot;LOC_XBLCK&quot;"/>
+                <TargetColumn Name="ARCH_INPROCESS" ProjectionExpression="&quot;ARCH_INPROCESS&quot;"/>
+                <TargetColumn Name="XPOS" ProjectionExpression="&quot;XPOS&quot;"/>
+                <TargetColumn Name="YPOS" ProjectionExpression="&quot;YPOS&quot;"/>
+                <TargetColumn Name="PRECISID" ProjectionExpression="&quot;PRECISID&quot;"/>
+                <TargetColumn Name="SRCID" ProjectionExpression="&quot;SRCID&quot;"/>
+                <TargetColumn Name="ZPOS" ProjectionExpression="&quot;ZPOS&quot;"/>
+                <TargetColumn Name="PPCAL" ProjectionExpression="&quot;PPCAL&quot;"/>
+                <TargetColumn Name="SDCAL" ProjectionExpression="&quot;SDCAL&quot;"/>
+                <TargetColumn Name="SHCAL" ProjectionExpression="&quot;SHCAL&quot;"/>
+                <TargetColumn Name="STCAL" ProjectionExpression="&quot;STCAL&quot;"/>
+                <TargetColumn Name="RCCAL" ProjectionExpression="&quot;RCCAL&quot;"/>
+                <TargetColumn Name="EDI_PARTNER" ProjectionExpression="&quot;EDI_PARTNER&quot;"/>
+                <TargetColumn Name="PARTNER" ProjectionExpression="&quot;PARTNER&quot;"/>
+                <TargetColumn Name="PARTNER_GUID" ProjectionExpression="&quot;PARTNER_GUID&quot;"/>
+                <TargetColumn Name="SPERM" ProjectionExpression="&quot;SPERM&quot;"/>
+                <TargetColumn Name="HANDL" ProjectionExpression="&quot;HANDL&quot;"/>
+                <TargetColumn Name="HANDL_OUT" ProjectionExpression="&quot;HANDL_OUT&quot;"/>
+                <TargetColumn Name="TIME_RES" ProjectionExpression="&quot;TIME_RES&quot;"/>
+                <TargetColumn Name="TIME_RES_OUT" ProjectionExpression="&quot;TIME_RES_OUT&quot;"/>
+                <TargetColumn Name="STORE" ProjectionExpression="&quot;STORE&quot;"/>
+                <TargetColumn Name="TPRES_INB" ProjectionExpression="&quot;TPRES_INB&quot;"/>
+                <TargetColumn Name="TPRES_OUT" ProjectionExpression="&quot;TPRES_OUT&quot;"/>
+                <TargetColumn Name="RESFLAG" ProjectionExpression="&quot;RESFLAG&quot;"/>
+                <TargetColumn Name="PRREG" ProjectionExpression="&quot;PRREG&quot;"/>
+                <TargetColumn Name="LPRIO" ProjectionExpression="&quot;LPRIO&quot;"/>
+                <TargetColumn Name="LOCPRIO" ProjectionExpression="&quot;LOCPRIO&quot;"/>
+                <TargetColumn Name="STOCG" ProjectionExpression="&quot;STOCG&quot;"/>
+                <TargetColumn Name="ATDDM" ProjectionExpression="&quot;ATDDM&quot;"/>
+                <TargetColumn Name="ATDSP" ProjectionExpression="&quot;ATDSP&quot;"/>
+                <TargetColumn Name="PUSH_FLG" ProjectionExpression="&quot;PUSH_FLG&quot;"/>
+                <TargetColumn Name="STOCK_FLG" ProjectionExpression="&quot;STOCK_FLG&quot;"/>
+                <TargetColumn Name="CONSOL_FLG" ProjectionExpression="&quot;CONSOL_FLG&quot;"/>
+                <TargetColumn Name="COMP_FLG" ProjectionExpression="&quot;COMP_FLG&quot;"/>
+                <TargetColumn Name="TRPCR_TIME" ProjectionExpression="&quot;TRPCR_TIME&quot;"/>
+                <TargetColumn Name="TRPCR_TIME_UNIT" ProjectionExpression="&quot;TRPCR_TIME_UNIT&quot;"/>
+                <TargetColumn Name="COM_TIME" ProjectionExpression="&quot;COM_TIME&quot;"/>
+                <TargetColumn Name="COM_TIME_UNIT" ProjectionExpression="&quot;COM_TIME_UNIT&quot;"/>
+                <TargetColumn Name="SETUPKEY" ProjectionExpression="&quot;SETUPKEY&quot;"/>
+                <TargetColumn Name="SCACD" ProjectionExpression="&quot;SCACD&quot;"/>
+                <TargetColumn Name="CONT_MV" ProjectionExpression="&quot;CONT_MV&quot;"/>
+                <TargetColumn Name="DURAT" ProjectionExpression="&quot;DURAT&quot;"/>
+                <TargetColumn Name="PERF_PCT" ProjectionExpression="&quot;PERF_PCT&quot;"/>
+                <TargetColumn Name="FVISIT" ProjectionExpression="&quot;FVISIT&quot;"/>
+                <TargetColumn Name="LVISIT" ProjectionExpression="&quot;LVISIT&quot;"/>
+                <TargetColumn Name="KOSCH" ProjectionExpression="&quot;KOSCH&quot;"/>
+                <TargetColumn Name="SUBCON_PLANT" ProjectionExpression="&quot;SUBCON_PLANT&quot;"/>
+                <TargetColumn Name="SUBCON_SUPPLIER" ProjectionExpression="&quot;SUBCON_SUPPLIER&quot;"/>
+                <TargetColumn Name="PRCIND" ProjectionExpression="&quot;PRCIND&quot;"/>
+                <TargetColumn Name="OPTIME" ProjectionExpression="&quot;OPTIME&quot;"/>
+                <TargetColumn Name="PROMUP" ProjectionExpression="&quot;PROMUP&quot;"/>
+                <TargetColumn Name="PROMDOWN" ProjectionExpression="&quot;PROMDOWN&quot;"/>
+                <TargetColumn Name="COSTMULTUPPROM" ProjectionExpression="&quot;COSTMULTUPPROM&quot;"/>
+                <TargetColumn Name="COSTMULTDOWNPROM" ProjectionExpression="&quot;COSTMULTDOWNPROM&quot;"/>
+                <TargetColumn Name="NIELSEN" ProjectionExpression="&quot;NIELSEN&quot;"/>
+                <TargetColumn Name="STORCAPA" ProjectionExpression="&quot;STORCAPA&quot;"/>
+                <TargetColumn Name="STORCAPA_UNIT" ProjectionExpression="&quot;STORCAPA_UNIT&quot;"/>
+                <TargetColumn Name="DECONS" ProjectionExpression="&quot;DECONS&quot;"/>
+                <TargetColumn Name="ATTLO01" ProjectionExpression="&quot;ATTLO01&quot;"/>
+                <TargetColumn Name="ATTLO02" ProjectionExpression="&quot;ATTLO02&quot;"/>
+                <TargetColumn Name="ATTLO03" ProjectionExpression="&quot;ATTLO03&quot;"/>
+                <TargetColumn Name="ATTLO04" ProjectionExpression="&quot;ATTLO04&quot;"/>
+                <TargetColumn Name="ATTLO05" ProjectionExpression="&quot;ATTLO05&quot;"/>
+                <TargetColumn Name="PROTS" ProjectionExpression="&quot;PROTS&quot;"/>
+                <TargetColumn Name="PROBASE" ProjectionExpression="&quot;PROBASE&quot;"/>
+                <TargetColumn Name="PROOQO" ProjectionExpression="&quot;PROOQO&quot;"/>
+                <TargetColumn Name="PROBEXC" ProjectionExpression="&quot;PROBEXC&quot;"/>
+                <TargetColumn Name="PROSUIRESP" ProjectionExpression="&quot;PROSUIRESP&quot;"/>
+                <TargetColumn Name="TEMPRPBLOCK" ProjectionExpression="&quot;TEMPRPBLOCK&quot;"/>
+                <TargetColumn Name="PROBICONS" ProjectionExpression="&quot;PROBICONS&quot;"/>
+                <TargetColumn Name="TEMPRPFROM" ProjectionExpression="&quot;TEMPRPFROM&quot;"/>
+                <TargetColumn Name="TEMPRPTO" ProjectionExpression="&quot;TEMPRPTO&quot;"/>
+                <TargetColumn Name="DPCAL" ProjectionExpression="&quot;DPCAL&quot;"/>
+                <TargetColumn Name="CAPPARM" ProjectionExpression="&quot;CAPPARM&quot;"/>
+                <TargetColumn Name="CAPPARM_RCV" ProjectionExpression="&quot;CAPPARM_RCV&quot;"/>
+                <TargetColumn Name="LGRAD" ProjectionExpression="&quot;LGRAD&quot;"/>
+                <TargetColumn Name="BNTYP" ProjectionExpression="&quot;BNTYP&quot;"/>
+                <TargetColumn Name="DISTR" ProjectionExpression="&quot;DISTR&quot;"/>
+                <TargetColumn Name="TRAILER_HANDLING" ProjectionExpression="&quot;TRAILER_HANDLING&quot;"/>
+                <TargetColumn Name="SHIPPER_SEC_STS" ProjectionExpression="&quot;SHIPPER_SEC_STS&quot;"/>
+                <TargetColumn Name="SHIPPER_CODE" ProjectionExpression="&quot;SHIPPER_CODE&quot;"/>
+                <TargetColumn Name="SHIPPER_VALIDITY" ProjectionExpression="&quot;SHIPPER_VALIDITY&quot;"/>
+                <TargetColumn Name="CREATEUSER" ProjectionExpression="&quot;CREATEUSER&quot;"/>
+                <TargetColumn Name="CREATEUTC" ProjectionExpression="&quot;CREATEUTC&quot;"/>
+                <TargetColumn Name="CHANGEUSER" ProjectionExpression="&quot;CHANGEUSER&quot;"/>
+                <TargetColumn Name="CHANGEUTC" ProjectionExpression="&quot;CHANGEUTC&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/LOCT" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOCT&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/LOCT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="SPRAS" ProjectionExpression="&quot;SPRAS&quot;"/>
+                <TargetColumn Name="LOCID" ProjectionExpression="&quot;LOCID&quot;"/>
+                <TargetColumn Name="DESCR40" ProjectionExpression="&quot;DESCR40&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/LOC_EQUI" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/LOC_EQUI&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/LOC_EQUI">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="LOCID" ProjectionExpression="&quot;LOCID&quot;"/>
+                <TargetColumn Name="RES_CLASS" ProjectionExpression="&quot;RES_CLASS&quot;"/>
+                <TargetColumn Name="EQUI_TYPE" ProjectionExpression="&quot;EQUI_TYPE&quot;"/>
+                <TargetColumn Name="EQUI_CODE" ProjectionExpression="&quot;EQUI_CODE&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/RELDSTR" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELDSTR&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/RELDSTR">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="RELID" ProjectionExpression="&quot;RELID&quot;"/>
+                <TargetColumn Name="RELNAME" ProjectionExpression="&quot;RELNAME&quot;"/>
+                <TargetColumn Name="RELSTRID" ProjectionExpression="&quot;RELSTRID&quot;"/>
+                <TargetColumn Name="RELUSESEQ" ProjectionExpression="&quot;RELUSESEQ&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/RELDSTRT" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELDSTRT&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/RELDSTRT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="RELID" ProjectionExpression="&quot;RELID&quot;"/>
+                <TargetColumn Name="LANGU" ProjectionExpression="&quot;LANGU&quot;"/>
+                <TargetColumn Name="RELT" ProjectionExpression="&quot;RELT&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/RELEHZON" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELEHZON&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/RELEHZON">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="RELID" ProjectionExpression="&quot;RELID&quot;"/>
+                <TargetColumn Name="PNODEID" ProjectionExpression="&quot;PNODEID&quot;"/>
+                <TargetColumn Name="CNODEID" ProjectionExpression="&quot;CNODEID&quot;"/>
+                <TargetColumn Name="CLEVID" ProjectionExpression="&quot;CLEVID&quot;"/>
+                <TargetColumn Name="RELINVISIBLE" ProjectionExpression="&quot;RELINVISIBLE&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/RELSDIR" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/RELSDIR&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/RELSDIR">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="RELSTRID" ProjectionExpression="&quot;RELSTRID&quot;"/>
+                <TargetColumn Name="RELSNAME" ProjectionExpression="&quot;RELSNAME&quot;"/>
+                <TargetColumn Name="RELNODETYPE" ProjectionExpression="&quot;RELNODETYPE&quot;"/>
+                <TargetColumn Name="RELTYPE" ProjectionExpression="&quot;RELTYPE&quot;"/>
+                <TargetColumn Name="RELLINKTABLE" ProjectionExpression="&quot;RELLINKTABLE&quot;"/>
+                <TargetColumn Name="RELTCODE" ProjectionExpression="&quot;RELTCODE&quot;"/>
+                <TargetColumn Name="NO_LEVEL_RESTR" ProjectionExpression="&quot;NO_LEVEL_RESTR&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TMODCOD" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TMODCOD&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TMODCOD">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="TRMODCOD" ProjectionExpression="&quot;TRMODCOD&quot;"/>
+                <TargetColumn Name="DGMOT" ProjectionExpression="&quot;DGMOT&quot;"/>
+                <TargetColumn Name="TRMODCAT" ProjectionExpression="&quot;TRMODCAT&quot;"/>
+                <TargetColumn Name="MAIN_CARRIAGE" ProjectionExpression="&quot;MAIN_CARRIAGE&quot;"/>
+                <TargetColumn Name="DIST_EMISSION_FACTOR" ProjectionExpression="&quot;DIST_EMISSION_FACTOR&quot;"/>
+                <TargetColumn Name="DEFAULT_MTR" ProjectionExpression="&quot;DEFAULT_MTR&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TMODCODT" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TMODCODT&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TMODCODT">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="SPRAS" ProjectionExpression="&quot;SPRAS&quot;"/>
+                <TargetColumn Name="TRMODCODE" ProjectionExpression="&quot;TRMODCODE&quot;"/>
+                <TargetColumn Name="TRMODCODETXT" ProjectionExpression="&quot;TRMODCODETXT&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TR" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TR&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TR">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="LOCFR" ProjectionExpression="&quot;LOCFR&quot;"/>
+                <TargetColumn Name="LOCTO" ProjectionExpression="&quot;LOCTO&quot;"/>
+                <TargetColumn Name="TRNAME" ProjectionExpression="&quot;TRNAME&quot;"/>
+                <TargetColumn Name="TRLID" ProjectionExpression="&quot;TRLID&quot;"/>
+                <TargetColumn Name="TRTEXT" ProjectionExpression="&quot;TRTEXT&quot;"/>
+                <TargetColumn Name="PLANNER" ProjectionExpression="&quot;PLANNER&quot;"/>
+                <TargetColumn Name="OPCAL" ProjectionExpression="&quot;OPCAL&quot;"/>
+                <TargetColumn Name="SHPCAL" ProjectionExpression="&quot;SHPCAL&quot;"/>
+                <TargetColumn Name="RECCAL" ProjectionExpression="&quot;RECCAL&quot;"/>
+                <TargetColumn Name="COMM_DURA" ProjectionExpression="&quot;COMM_DURA&quot;"/>
+                <TargetColumn Name="CORR_FPER" ProjectionExpression="&quot;CORR_FPER&quot;"/>
+                <TargetColumn Name="PROMO_RND" ProjectionExpression="&quot;PROMO_RND&quot;"/>
+                <TargetColumn Name="SSD_PRF_ID_H" ProjectionExpression="&quot;SSD_PRF_ID_H&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TRM" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRM&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TRM">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="TRMID" ProjectionExpression="&quot;TRMID&quot;"/>
+                <TargetColumn Name="LOCFR" ProjectionExpression="&quot;LOCFR&quot;"/>
+                <TargetColumn Name="LOCTO" ProjectionExpression="&quot;LOCTO&quot;"/>
+                <TargetColumn Name="TRNAME" ProjectionExpression="&quot;TRNAME&quot;"/>
+                <TargetColumn Name="TTYPE" ProjectionExpression="&quot;TTYPE&quot;"/>
+                <TargetColumn Name="VALFR" ProjectionExpression="&quot;VALFR&quot;"/>
+                <TargetColumn Name="VALTO" ProjectionExpression="&quot;VALTO&quot;"/>
+                <TargetColumn Name="VALFR_CTP" ProjectionExpression="&quot;VALFR_CTP&quot;"/>
+                <TargetColumn Name="VALTO_CTP" ProjectionExpression="&quot;VALTO_CTP&quot;"/>
+                <TargetColumn Name="PTFLAG" ProjectionExpression="&quot;PTFLAG&quot;"/>
+                <TargetColumn Name="PTHCNT" ProjectionExpression="&quot;PTHCNT&quot;"/>
+                <TargetColumn Name="AGGTPLFLG" ProjectionExpression="&quot;AGGTPLFLG&quot;"/>
+                <TargetColumn Name="DTLTPLFLG" ProjectionExpression="&quot;DTLTPLFLG&quot;"/>
+                <TargetColumn Name="TRMTEXT" ProjectionExpression="&quot;TRMTEXT&quot;"/>
+                <TargetColumn Name="TRCAL" ProjectionExpression="&quot;TRCAL&quot;"/>
+                <TargetColumn Name="TTYPECOST" ProjectionExpression="&quot;TTYPECOST&quot;"/>
+                <TargetColumn Name="TTYPECOST_MIN" ProjectionExpression="&quot;TTYPECOST_MIN&quot;"/>
+                <TargetColumn Name="DURAT" ProjectionExpression="&quot;DURAT&quot;"/>
+                <TargetColumn Name="DURFX" ProjectionExpression="&quot;DURFX&quot;"/>
+                <TargetColumn Name="STOPDURAT" ProjectionExpression="&quot;STOPDURAT&quot;"/>
+                <TargetColumn Name="DIST" ProjectionExpression="&quot;DIST&quot;"/>
+                <TargetColumn Name="DISTFX" ProjectionExpression="&quot;DISTFX&quot;"/>
+                <TargetColumn Name="TCOST" ProjectionExpression="&quot;TCOST&quot;"/>
+                <TargetColumn Name="TUNIT" ProjectionExpression="&quot;TUNIT&quot;"/>
+                <TargetColumn Name="TCOSTID" ProjectionExpression="&quot;TCOSTID&quot;"/>
+                <TargetColumn Name="RESUID" ProjectionExpression="&quot;RESUID&quot;"/>
+                <TargetColumn Name="TPRID" ProjectionExpression="&quot;TPRID&quot;"/>
+                <TargetColumn Name="TTYPEDISC" ProjectionExpression="&quot;TTYPEDISC&quot;"/>
+                <TargetColumn Name="DURRNDPR" ProjectionExpression="&quot;DURRNDPR&quot;"/>
+                <TargetColumn Name="TREQ_COVER_TYPE" ProjectionExpression="&quot;TREQ_COVER_TYPE&quot;"/>
+                <TargetColumn Name="PREC" ProjectionExpression="&quot;PREC&quot;"/>
+                <TargetColumn Name="NSTKIT" ProjectionExpression="&quot;NSTKIT&quot;"/>
+                <TargetColumn Name="USAGE_CARRSEL" ProjectionExpression="&quot;USAGE_CARRSEL&quot;"/>
+                <TargetColumn Name="VTPRID" ProjectionExpression="&quot;VTPRID&quot;"/>
+                <TargetColumn Name="VTOSIDDEF" ProjectionExpression="&quot;VTOSIDDEF&quot;"/>
+                <TargetColumn Name="VTOSID" ProjectionExpression="&quot;VTOSID&quot;"/>
+                <TargetColumn Name="LOADSEL" ProjectionExpression="&quot;LOADSEL&quot;"/>
+                <TargetColumn Name="ORDTOL" ProjectionExpression="&quot;ORDTOL&quot;"/>
+                <TargetColumn Name="PIHOR" ProjectionExpression="&quot;PIHOR&quot;"/>
+                <TargetColumn Name="SIZEDEC" ProjectionExpression="&quot;SIZEDEC&quot;"/>
+                <TargetColumn Name="SIZETH" ProjectionExpression="&quot;SIZETH&quot;"/>
+                <TargetColumn Name="TDD_LT_PULL" ProjectionExpression="&quot;TDD_LT_PULL&quot;"/>
+                <TargetColumn Name="TDD_LT_PUSH" ProjectionExpression="&quot;TDD_LT_PUSH&quot;"/>
+                <TargetColumn Name="TSS_LT_PULL" ProjectionExpression="&quot;TSS_LT_PULL&quot;"/>
+                <TargetColumn Name="TSS_LT_PUSH" ProjectionExpression="&quot;TSS_LT_PUSH&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TRMCARR" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRMCARR&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TRMCARR">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="TRMCARRID" ProjectionExpression="&quot;TRMCARRID&quot;"/>
+                <TargetColumn Name="PARTNER" ProjectionExpression="&quot;PARTNER&quot;"/>
+                <TargetColumn Name="LOCID" ProjectionExpression="&quot;LOCID&quot;"/>
+                <TargetColumn Name="LOCFR" ProjectionExpression="&quot;LOCFR&quot;"/>
+                <TargetColumn Name="LOCTO" ProjectionExpression="&quot;LOCTO&quot;"/>
+                <TargetColumn Name="TRNAME" ProjectionExpression="&quot;TRNAME&quot;"/>
+                <TargetColumn Name="TTYPE" ProjectionExpression="&quot;TTYPE&quot;"/>
+                <TargetColumn Name="VALFR" ProjectionExpression="&quot;VALFR&quot;"/>
+                <TargetColumn Name="VALTO" ProjectionExpression="&quot;VALTO&quot;"/>
+                <TargetColumn Name="VALFR_CTP" ProjectionExpression="&quot;VALFR_CTP&quot;"/>
+                <TargetColumn Name="VALTO_CTP" ProjectionExpression="&quot;VALTO_CTP&quot;"/>
+                <TargetColumn Name="CARRTRCOST" ProjectionExpression="&quot;CARRTRCOST&quot;"/>
+                <TargetColumn Name="CARRTRCOSTUNIT" ProjectionExpression="&quot;CARRTRCOSTUNIT&quot;"/>
+                <TargetColumn Name="CARRCOST" ProjectionExpression="&quot;CARRCOST&quot;"/>
+                <TargetColumn Name="CARRPRIO" ProjectionExpression="&quot;CARRPRIO&quot;"/>
+                <TargetColumn Name="BUSNSSHARE" ProjectionExpression="&quot;BUSNSSHARE&quot;"/>
+                <TargetColumn Name="MINSHIP" ProjectionExpression="&quot;MINSHIP&quot;"/>
+                <TargetColumn Name="MAXSHIP" ProjectionExpression="&quot;MAXSHIP&quot;"/>
+                <TargetColumn Name="CMDTWEU" ProjectionExpression="&quot;CMDTWEU&quot;"/>
+                <TargetColumn Name="CMDTWE" ProjectionExpression="&quot;CMDTWE&quot;"/>
+                <TargetColumn Name="CMDTWLU" ProjectionExpression="&quot;CMDTWLU&quot;"/>
+                <TargetColumn Name="CMDTWL" ProjectionExpression="&quot;CMDTWL&quot;"/>
+                <TargetColumn Name="CMATWEU" ProjectionExpression="&quot;CMATWEU&quot;"/>
+                <TargetColumn Name="CMATWE" ProjectionExpression="&quot;CMATWE&quot;"/>
+                <TargetColumn Name="CMATWLU" ProjectionExpression="&quot;CMATWLU&quot;"/>
+                <TargetColumn Name="CMATWL" ProjectionExpression="&quot;CMATWL&quot;"/>
+                <TargetColumn Name="CMMAXD" ProjectionExpression="&quot;CMMAXD&quot;"/>
+                <TargetColumn Name="CMRECC" ProjectionExpression="&quot;CMRECC&quot;"/>
+                <TargetColumn Name="CMDISC" ProjectionExpression="&quot;CMDISC&quot;"/>
+                <TargetColumn Name="DG_FLAG" ProjectionExpression="&quot;DG_FLAG&quot;"/>
+                <TargetColumn Name="TMP2PTENDFLG" ProjectionExpression="&quot;TMP2PTENDFLG&quot;"/>
+                <TargetColumn Name="TMP2PTENDPRIO" ProjectionExpression="&quot;TMP2PTENDPRIO&quot;"/>
+                <TargetColumn Name="TMBROADCTENDFLG" ProjectionExpression="&quot;TMBROADCTENDFLG&quot;"/>
+                <TargetColumn Name="TMBROADCTENDPRIO" ProjectionExpression="&quot;TMBROADCTENDPRIO&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SAPAPO/TRTYPE" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SAPAPO/TRTYPE&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SAPAPO/TRTYPE">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="TTYPE" ProjectionExpression="&quot;TTYPE&quot;"/>
+                <TargetColumn Name="MOTSCODE" ProjectionExpression="&quot;MOTSCODE&quot;"/>
+                <TargetColumn Name="AVGVEL" ProjectionExpression="&quot;AVGVEL&quot;"/>
+                <TargetColumn Name="DISTFAC" ProjectionExpression="&quot;DISTFAC&quot;"/>
+                <TargetColumn Name="FIXTIME" ProjectionExpression="&quot;FIXTIME&quot;"/>
+                <TargetColumn Name="AVGWTIME" ProjectionExpression="&quot;AVGWTIME&quot;"/>
+                <TargetColumn Name="TRMODE" ProjectionExpression="&quot;TRMODE&quot;"/>
+                <TargetColumn Name="OWNTTYPFLG" ProjectionExpression="&quot;OWNTTYPFLG&quot;"/>
+                <TargetColumn Name="RESUID" ProjectionExpression="&quot;RESUID&quot;"/>
+                <TargetColumn Name="TTCONNFLG" ProjectionExpression="&quot;TTCONNFLG&quot;"/>
+                <TargetColumn Name="TSWFLG" ProjectionExpression="&quot;TSWFLG&quot;"/>
+                <TargetColumn Name="IGS_QUALITY" ProjectionExpression="&quot;IGS_QUALITY&quot;"/>
+                <TargetColumn Name="VELO_LOW" ProjectionExpression="&quot;VELO_LOW&quot;"/>
+                <TargetColumn Name="VELO_MEDIUM" ProjectionExpression="&quot;VELO_MEDIUM&quot;"/>
+                <TargetColumn Name="VELO_HIGH" ProjectionExpression="&quot;VELO_HIGH&quot;"/>
+                <TargetColumn Name="EXT_TTYPE_FLG" ProjectionExpression="&quot;EXT_TTYPE_FLG&quot;"/>
+                <TargetColumn Name="EXT_TTYPE_NUM" ProjectionExpression="&quot;EXT_TTYPE_NUM&quot;"/>
+                <TargetColumn Name="LOAD_WEIGHT" ProjectionExpression="&quot;LOAD_WEIGHT&quot;"/>
+                <TargetColumn Name="LOAD_UOM_WGT" ProjectionExpression="&quot;LOAD_UOM_WGT&quot;"/>
+                <TargetColumn Name="LOAD_VOLUME" ProjectionExpression="&quot;LOAD_VOLUME&quot;"/>
+                <TargetColumn Name="LOAD_UOM_VOL" ProjectionExpression="&quot;LOAD_UOM_VOL&quot;"/>
+                <TargetColumn Name="LOAD_LENGTH" ProjectionExpression="&quot;LOAD_LENGTH&quot;"/>
+                <TargetColumn Name="LOAD_WIDTH" ProjectionExpression="&quot;LOAD_WIDTH&quot;"/>
+                <TargetColumn Name="LOAD_HEIGHT" ProjectionExpression="&quot;LOAD_HEIGHT&quot;"/>
+                <TargetColumn Name="LOAD_UOM_LWH" ProjectionExpression="&quot;LOAD_UOM_LWH&quot;"/>
+                <TargetColumn Name="TTYPE_PARENT" ProjectionExpression="&quot;TTYPE_PARENT&quot;"/>
+                <TargetColumn Name="DGMOT" ProjectionExpression="&quot;DGMOT&quot;"/>
+                <TargetColumn Name="EMG_AUTO_TRANS" ProjectionExpression="&quot;EMG_AUTO_TRANS&quot;"/>
+                <TargetColumn Name="PASSIVE" ProjectionExpression="&quot;PASSIVE&quot;"/>
+                <TargetColumn Name="NO_CAPACITY" ProjectionExpression="&quot;NO_CAPACITY&quot;"/>
+                <TargetColumn Name="NO_DIRECT_LOAD" ProjectionExpression="&quot;NO_DIRECT_LOAD&quot;"/>
+                <TargetColumn Name="LOCK_MULTIRES" ProjectionExpression="&quot;LOCK_MULTIRES&quot;"/>
+                <TargetColumn Name="TRMODCODE" ProjectionExpression="&quot;TRMODCODE&quot;"/>
+                <TargetColumn Name="DIST_EMISSION_FACTOR" ProjectionExpression="&quot;DIST_EMISSION_FACTOR&quot;"/>
+                <TargetColumn Name="RES_CLASS" ProjectionExpression="&quot;RES_CLASS&quot;"/>
+                <TargetColumn Name="UNLTD_NO_INDV_RES" ProjectionExpression="&quot;UNLTD_NO_INDV_RES&quot;"/>
+                <TargetColumn Name="FLAG_DEFAULT_MTR" ProjectionExpression="&quot;FLAG_DEFAULT_MTR&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/TOENTITY" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/TOENTITY&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/TOENTITY">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="SCUGUID" ProjectionExpression="&quot;SCUGUID&quot;"/>
+                <TargetColumn Name="ENTITY" ProjectionExpression="&quot;ENTITY&quot;"/>
+                <TargetColumn Name="SCUGUID22" ProjectionExpression="&quot;SCUGUID22&quot;"/>
+                <TargetColumn Name="SCUTYPE" ProjectionExpression="&quot;SCUTYPE&quot;"/>
+                <TargetColumn Name="TZONE" ProjectionExpression="&quot;TZONE&quot;"/>
+                <TargetColumn Name="ADRESSE" ProjectionExpression="&quot;ADRESSE&quot;"/>
+                <TargetColumn Name="PARTNER_GUID" ProjectionExpression="&quot;PARTNER_GUID&quot;"/>
+                <TargetColumn Name="DELFLG" ProjectionExpression="&quot;DELFLG&quot;"/>
+                <TargetColumn Name="LONGITUDE" ProjectionExpression="&quot;LONGITUDE&quot;"/>
+                <TargetColumn Name="LATITUDE" ProjectionExpression="&quot;LATITUDE&quot;"/>
+                <TargetColumn Name="GEOPRECIS" ProjectionExpression="&quot;GEOPRECIS&quot;"/>
+                <TargetColumn Name="GEOSRCID" ProjectionExpression="&quot;GEOSRCID&quot;"/>
+                <TargetColumn Name="CREATEUSER" ProjectionExpression="&quot;CREATEUSER&quot;"/>
+                <TargetColumn Name="CREATEUTC" ProjectionExpression="&quot;CREATEUTC&quot;"/>
+                <TargetColumn Name="CHANGEUSER" ProjectionExpression="&quot;CHANGEUSER&quot;"/>
+                <TargetColumn Name="CHANGEUTC" ProjectionExpression="&quot;CHANGEUTC&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/ZONE" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/ZONE">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="GUID_ZONE" ProjectionExpression="&quot;GUID_ZONE&quot;"/>
+                <TargetColumn Name="ID_ZONE" ProjectionExpression="&quot;ID_ZONE&quot;"/>
+                <TargetColumn Name="CRNAM" ProjectionExpression="&quot;CRNAM&quot;"/>
+                <TargetColumn Name="CRTIMESTP" ProjectionExpression="&quot;CRTIMESTP&quot;"/>
+                <TargetColumn Name="CHNAM" ProjectionExpression="&quot;CHNAM&quot;"/>
+                <TargetColumn Name="CHTIMESTP" ProjectionExpression="&quot;CHTIMESTP&quot;"/>
+                <TargetColumn Name="DEL_FLAG" ProjectionExpression="&quot;DEL_FLAG&quot;"/>
+                <TargetColumn Name="TYPE_ZONE" ProjectionExpression="&quot;TYPE_ZONE&quot;"/>
+                <TargetColumn Name="ROUT_REL_ZONE" ProjectionExpression="&quot;ROUT_REL_ZONE&quot;"/>
+                <TargetColumn Name="MAIN_BUS_ZONE" ProjectionExpression="&quot;MAIN_BUS_ZONE&quot;"/>
+                <TargetColumn Name="BUS_PRIC_ZONE" ProjectionExpression="&quot;BUS_PRIC_ZONE&quot;"/>
+                <TargetColumn Name="CITY_CODE_ZONE" ProjectionExpression="&quot;CITY_CODE_ZONE&quot;"/>
+                <TargetColumn Name="ZONE_CATEGORY" ProjectionExpression="&quot;ZONE_CATEGORY&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/ZONET" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONET&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/ZONET">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="SPRAS" ProjectionExpression="&quot;SPRAS&quot;"/>
+                <TargetColumn Name="GUID_ZONE" ProjectionExpression="&quot;GUID_ZONE&quot;"/>
+                <TargetColumn Name="DESCR" ProjectionExpression="&quot;DESCR&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/ZONE_D" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_D&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/ZONE_D">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="GUID_ZONE" ProjectionExpression="&quot;GUID_ZONE&quot;"/>
+                <TargetColumn Name="GUID_LOCATION" ProjectionExpression="&quot;GUID_LOCATION&quot;"/>
+                <TargetColumn Name="EXCLUDE" ProjectionExpression="&quot;EXCLUDE&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/ZONE_P" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_P&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/ZONE_P">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="GUID_ZONE" ProjectionExpression="&quot;GUID_ZONE&quot;"/>
+                <TargetColumn Name="COUNTER" ProjectionExpression="&quot;COUNTER&quot;"/>
+                <TargetColumn Name="COUNTRY" ProjectionExpression="&quot;COUNTRY&quot;"/>
+                <TargetColumn Name="PCODE_FROM" ProjectionExpression="&quot;PCODE_FROM&quot;"/>
+                <TargetColumn Name="PCODE_TO" ProjectionExpression="&quot;PCODE_TO&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMB/ZONE_R" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMB/ZONE_R&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMB/ZONE_R">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="GUID_ZONE" ProjectionExpression="&quot;GUID_ZONE&quot;"/>
+                <TargetColumn Name="COUNTER" ProjectionExpression="&quot;COUNTER&quot;"/>
+                <TargetColumn Name="COUNTRY" ProjectionExpression="&quot;COUNTRY&quot;"/>
+                <TargetColumn Name="REGION" ProjectionExpression="&quot;REGION&quot;"/>
+            </TargetColumns>
+        </Mapping>
+        <Mapping ObjectName="/SCMTMS/D_SHZON" RemoteObjectUniqueName="&quot;SAPHANADB&quot;.&quot;/SCMTMS/D_SHZON&quot;" ReplicationBehavior="InitAndRealtime" VTObjectName="VT_/SCMTMS/D_SHZON">
+            <TargetColumns>
+                <TargetColumn Name="LOG_SYS" ProjectionExpression="&#x27;XB7&#x27;"/>
+                <TargetColumn Name="MANDT" ProjectionExpression="&quot;MANDT&quot;"/>
+                <TargetColumn Name="ZONEID" ProjectionExpression="&quot;ZONEID&quot;"/>
+                <TargetColumn Name="LOCUUID" ProjectionExpression="&quot;LOCUUID&quot;"/>
+            </TargetColumns>
+        </Mapping>
+    </Mappings>
+</RepTask>

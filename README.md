@@ -1,2 +1,2 @@
 # TRP_SDI_DATA_REPL
-TRP SDI Data Replication tasks and configurations
+This SDI data replication application is just for reference, please adjust based on your own requirement.

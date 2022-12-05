@@ -4,11 +4,11 @@ description: SAP TRP SDI Replication
 version: 0.0.1
 
 modules:
- - name: db
+ - name: trp-sdi-db
    type: hdb
    path: db
    requires:
-    - name: hdi_db
+    - name: TRP_SDI_REP_DB
       properties:
         TARGET_CONTAINER: ~{hdi-container-name}
 
@@ -24,7 +24,7 @@ modules:
 
 
 resources:
- - name: hdi_db
+ - name: TRP_SDI_REP_DB
    parameters:
       config:
          schema: TRP_SDI_REPLICATION
@@ -38,4 +38,3 @@ resources:
    properties:
       the-service-name: ${service-name}
    type: org.cloudfoundry.existing-service
-
