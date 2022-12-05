@@ -1,8 +1,0 @@
-{
-    "role": {
-        "name": "trp::TMSelect",
-        "schema_privileges": [{
-		   "privileges": ["SELECT"]
-		}]
-    }
-}
